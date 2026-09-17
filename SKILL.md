@@ -22,7 +22,7 @@ Never publish publicly. A request to publish is outside this skill; stop after c
 3. Choose an angle and outline. Avoid duplicating source structure or close paraphrase.
 4. Draft title candidates, digest, body, CTA, and source notes. Facts in the article must trace to the Research Pack; clearly label opinion or inference.
 5. Review for factual support, copyright risk, sensitive claims, privacy, promotional overstatement, unsupported medical/legal/financial advice, and AI-generated-content disclosure needs.
-6. Produce WeChat-safe HTML using simple inline styles. Do not include scripts, forms, external trackers, or unsupported interactive elements.
+6. Read [references/formatting.md](references/formatting.md), select a suitable theme, and render WeChat-safe inline HTML with `scripts/formatter.py`. Do not include scripts, forms, external trackers, or unsupported interactive elements.
 7. Create `research_pack.json`, `article.json`, `content.html`, and `review.json` according to [references/schemas.md](references/schemas.md), then run `scripts/validate_bundle.py`.
 8. If `submit-draft` is authorized, read [references/wechat-api.md](references/wechat-api.md), use `scripts/wechat_adapter.py`, and return the API result plus a redacted operation log. Never print secrets or access tokens.
 
@@ -38,4 +38,4 @@ Never publish publicly. A request to publish is outside this skill; stop after c
 
 Return a compact status object containing: `mode`, `topic`, `angle`, `artifacts`, `review_status`, `risk_flags`, `submission_status`, `draft_media_id`, and `next_action`. Escalate unresolved factual disputes or high-impact compliance issues to a human reviewer.
 
-For the exact schemas and acceptance criteria, read [references/schemas.md](references/schemas.md). For disclosure and review rules, read [references/review-policy.md](references/review-policy.md).
+For schemas and acceptance criteria, read [references/schemas.md](references/schemas.md). For disclosure and review rules, read [references/review-policy.md](references/review-policy.md). For Markdown rendering and theme selection, read [references/formatting.md](references/formatting.md).
