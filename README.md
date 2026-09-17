@@ -7,7 +7,9 @@ A reusable AI skill for WeChat public-account content analysis, research, writin
 - Analyze topics, source material, and audience needs.
 - Build a traceable Research Pack before drafting factual claims.
 - Draft and format WeChat-compatible articles.
-- Render Markdown with selectable editorial, minimal, or tech themes.
+- Render Markdown with 12 selectable editorial, minimal, technology, and lifestyle themes.
+- Generate a visual theme gallery from the real article.
+- Render dialogue, steps, timeline, statistic, comparison, quote, intro, and ending components.
 - Normalize Chinese punctuation and CJK/Latin spacing, and convert external links to footnotes.
 - Review factual support, copyright, privacy, safety, and AI disclosure.
 - Validate a structured article bundle.
@@ -22,6 +24,8 @@ The skill does not automatically publish public posts.
 - `references/`: schemas, review policy, and WeChat API guidance.
 - `scripts/validate_bundle.py`: deterministic bundle validation.
 - `scripts/formatter.py`: deterministic Markdown-to-WeChat inline HTML renderer.
+- `scripts/gallery.py`: visual theme comparison using the real article.
+- `scripts/theme_lint.py`: deterministic theme-schema validation.
 - `scripts/wechat_adapter.py`: draft-box adapter with dry-run support.
 
 ## Validation
@@ -33,4 +37,4 @@ python3 -m py_compile scripts/*.py
 
 ## Status
 
-Current version: `v0.2` — adds a deterministic WeChat formatting layer inspired by strong open-source layout workflows.
+Current version: `v0.3` — adds a 12-theme system, advanced layout components, a visual gallery, and theme validation.

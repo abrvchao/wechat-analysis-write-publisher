@@ -4,9 +4,10 @@ Use `scripts/formatter.py` when the task includes 排版, 微信格式, HTML pre
 
 ## Themes
 
-- `editorial`: serious analysis, interviews, reports, and long-form essays.
-- `minimal`: reflective writing, personal essays, and low-noise reading.
-- `tech`: tutorials, product reviews, AI, software, and tool roundups.
+- Editorial: `editorial-red`, `newspaper`, `magazine`.
+- Minimal: `ink`, `mint`, `wechat-green`.
+- Technology: `tech-blue`, `github`, `midnight`.
+- Lifestyle: `terracotta`, `lavender`, `amber`.
 
 Choose from the article's subject unless the user specifies a theme. Preserve the author's wording: formatting may normalize punctuation and spacing but must not rewrite claims.
 
@@ -21,6 +22,27 @@ External links become numbered footnotes because WeChat may not preserve ordinar
 ```bash
 python3 scripts/formatter.py article.md --theme editorial --output content.html
 ```
+
+List themes or generate a visual gallery using the real article:
+
+```bash
+python3 scripts/formatter.py article.md --list-themes
+python3 scripts/gallery.py article.md --output theme-gallery.html
+```
+
+## Layout components
+
+Use fenced containers only when they materially improve the article:
+
+- `:::intro[导读]` — opening summary.
+- `:::dialogue[访谈]` — alternating dialogue bubbles.
+- `:::steps[步骤]` and `:::timeline[时间线]` — numbered sequences.
+- `:::stat[关键数据]` — metric cards.
+- `:::compare[对比]` — comparison columns.
+- `:::quote[金句]` — centered quote card.
+- `:::end[CTA]` — ending marker and call to action.
+
+Close each block with `:::`. Prefer one to three enhanced components per article; layout must serve comprehension rather than decoration.
 
 Run `validate_bundle.py` after building the complete article bundle. Visual approval is still required before draft submission.
 

@@ -1,0 +1,14 @@
+{
+  "editorial-red":{"label":"编辑红","accent":"#9f1239","accent2":"#be123c","text":"#292524","muted":"#78716c","surface":"#fff7ed","font":"Georgia,'Noto Serif SC',serif","radius":"2px"},
+  "newspaper":{"label":"报纸黑白","accent":"#111827","accent2":"#374151","text":"#1c1917","muted":"#78716c","surface":"#fafaf9","font":"Georgia,'Noto Serif SC',serif","radius":"0"},
+  "ink":{"label":"水墨留白","accent":"#27272a","accent2":"#52525b","text":"#27272a","muted":"#71717a","surface":"#fafafa","font":"'Noto Serif SC',serif","radius":"0"},
+  "tech-blue":{"label":"科技蓝","accent":"#2563eb","accent2":"#0891b2","text":"#172033","muted":"#64748b","surface":"#f1f5f9","font":"-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif","radius":"10px"},
+  "github":{"label":"开发者","accent":"#24292f","accent2":"#0969da","text":"#24292f","muted":"#57606a","surface":"#f6f8fa","font":"-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif","radius":"6px"},
+  "wechat-green":{"label":"微信绿","accent":"#07c160","accent2":"#10b981","text":"#1f2937","muted":"#6b7280","surface":"#f0fdf4","font":"-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif","radius":"8px"},
+  "terracotta":{"label":"赤陶暖调","accent":"#c2410c","accent2":"#ea580c","text":"#3f2d24","muted":"#8b6f61","surface":"#fff7ed","font":"'Noto Serif SC',serif","radius":"14px"},
+  "mint":{"label":"薄荷清新","accent":"#0f766e","accent2":"#14b8a6","text":"#173c3a","muted":"#5f7f7c","surface":"#f0fdfa","font":"-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif","radius":"14px"},
+  "lavender":{"label":"薰衣草","accent":"#7c3aed","accent2":"#a78bfa","text":"#312e4f","muted":"#746d91","surface":"#f5f3ff","font":"-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif","radius":"14px"},
+  "amber":{"label":"琥珀日落","accent":"#b45309","accent2":"#f59e0b","text":"#422006","muted":"#92400e","surface":"#fffbeb","font":"'Noto Serif SC',serif","radius":"10px"},
+  "magazine":{"label":"杂志留白","accent":"#be123c","accent2":"#fb7185","text":"#18181b","muted":"#71717a","surface":"#ffffff","font":"Georgia,'Noto Serif SC',serif","radius":"0"},
+  "midnight":{"label":"暗夜霓虹","accent":"#22d3ee","accent2":"#a78bfa","text":"#e5e7eb","muted":"#94a3b8","surface":"#111827","font":"-apple-system,BlinkMacSystemFont,'PingFang SC',sans-serif","radius":"10px"}
+}
