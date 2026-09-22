@@ -21,6 +21,33 @@ Required fields:
 
 Every factual claim intended for the article needs at least one source. Unresolved claims must not be stated as fact.
 
+### Radar seed compatibility
+
+A `research_pack.json` may be initialized from Content Opportunity Radar. Unknown fields remain allowed, and a Radar-compatible handoff may additionally include:
+
+```json
+{
+  "radar_handoff": {
+    "handoff_type": "radar_seed_research_pack",
+    "schema_version": "research-pack-v1",
+    "topic_id": "topic:...",
+    "rank_score": 0,
+    "opportunity": {},
+    "coverage": {},
+    "traceability": {},
+    "guardrails": {}
+  }
+}
+```
+
+Compatibility rules:
+
+- existing `sources[].id`, `claims[].id`, and `radar_*` provenance fields should be preserved when the pack is extended;
+- metric claims imported from Radar describe the cited observation only;
+- `[Radar interpretation]` entries are interpretations, not verified factual claims;
+- `[Evidence gap]` entries remain unresolved research work until supported by added sources;
+- adding a Radar seed does not weaken article citation, review, disclosure, formatting, or submission gates.
+
 ## `article.json`
 
 ```json
